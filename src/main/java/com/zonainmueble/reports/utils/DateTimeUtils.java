@@ -13,7 +13,7 @@ public class DateTimeUtils {
   }
 
   public static String format(LocalDateTime date, String pattern) {
-    Locale locale =  Locale.of("es", "MX");
+    Locale locale = new Locale("es", "MX");
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern, locale);
     return date.format(formatter);
   }
