@@ -1,11 +1,10 @@
 package com.zonainmueble.reports.services.impl;
 
-import static com.zonainmueble.reports.maps.MapType.*;
 import static com.zonainmueble.reports.geometry.Isochrone.Time.*;
 import static com.zonainmueble.reports.geometry.Isochrone.TransportMode.*;
+import static com.zonainmueble.reports.maps.MapType.*;
 
-import java.time.DayOfWeek;
-import java.time.LocalDateTime;
+import java.time.*;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -15,34 +14,17 @@ import org.springframework.stereotype.Service;
 import com.zonainmueble.reports.conclusion.ConclusionMessages;
 import com.zonainmueble.reports.dto.ReportRequest;
 import com.zonainmueble.reports.enums.NivelMaslow;
-import com.zonainmueble.reports.geometry.Coordinate;
-import com.zonainmueble.reports.geometry.Isochrone;
+import com.zonainmueble.reports.geometry.*;
 import com.zonainmueble.reports.geometry.Isochrone.Time;
 import com.zonainmueble.reports.isochrone.IsochroneRequest;
 import com.zonainmueble.reports.jasper.MaslowCategory;
-import com.zonainmueble.reports.maps.MapImageRequest;
-import com.zonainmueble.reports.maps.Marker;
-import com.zonainmueble.reports.maps.StyledPolygon;
+import com.zonainmueble.reports.maps.*;
 import com.zonainmueble.reports.maps.Marker.MarkerSize;
-import com.zonainmueble.reports.models.CategoriaMaslow;
-import com.zonainmueble.reports.models.Municipio;
-import com.zonainmueble.reports.models.NsePoblacion;
-import com.zonainmueble.reports.models.Poblacion;
-import com.zonainmueble.reports.models.PoiCategory;
-import com.zonainmueble.reports.models.PoiMaslowCategory;
-import com.zonainmueble.reports.models.PorcentajeEstudios;
-import com.zonainmueble.reports.models.PrecioMetroCuadrado;
+import com.zonainmueble.reports.models.*;
 import com.zonainmueble.reports.pois.Poi;
 import com.zonainmueble.reports.repositories.ReportRepository;
-import com.zonainmueble.reports.services.ConclusionService;
-import com.zonainmueble.reports.services.IsochroneService;
-import com.zonainmueble.reports.services.JasperReportService;
-import com.zonainmueble.reports.services.MapImagesService;
-import com.zonainmueble.reports.services.PoisService;
-import com.zonainmueble.reports.utils.DateTimeUtils;
-import com.zonainmueble.reports.utils.GeometryUtils;
-import com.zonainmueble.reports.utils.NumberUtils;
-import com.zonainmueble.reports.utils.StringUtils;
+import com.zonainmueble.reports.services.*;
+import com.zonainmueble.reports.utils.*;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
