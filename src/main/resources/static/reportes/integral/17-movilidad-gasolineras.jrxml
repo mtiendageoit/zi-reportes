@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="integral-9" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<staticText>
+				<reportElement x="28" y="21" width="736" height="40" forecolor="#3C3C3B" uuid="15c64adf-613a-498c-9079-1dada241c9f9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Montserrat" size="30"/>
+				</textElement>
+				<text><![CDATA[Mapa de Movilidad, 10 minutos en automóvil
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="55" width="736" height="40" forecolor="#3C3C3B" uuid="1e0fc73b-ea79-4290-b874-8aa7b108ea3c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Montserrat Medium" size="30"/>
+				</textElement>
+				<text><![CDATA[Gasolineras cercanas y confiables]]></text>
+			</staticText>
+			<line>
+				<reportElement x="28" y="112" width="736" height="1" forecolor="#3C3C3B" uuid="e6237ea3-f338-4d42-a5c0-78e6511b927d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Opaque" x="28" y="137" width="448" height="448" uuid="84755050-2a1e-45b0-99bd-03aebf71fade">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.radius" type="simpleText"><![CDATA[10]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#F49700"/>
+				</box>
+				<imageExpression><![CDATA[$P{params}.get( "mapImageMovilidadGasolineras")]]></imageExpression>
+			</image>
+			<rectangle radius="15">
+				<reportElement mode="Transparent" x="20" y="129" width="464" height="464" uuid="55219e36-3ce2-4ad2-a598-9855d08d2143">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="17.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="28" y="137" width="448" height="448" uuid="8176597d-3189-4b5c-aa71-183cc65251b9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#F49700"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="20">
+				<reportElement mode="Opaque" x="502" y="136" width="262" height="287" backcolor="#F49700" uuid="340e8fa8-a298-40b5-b2fd-717ba1c6e176">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="516" y="164" width="228" height="20" forecolor="#FFFFFF" uuid="22787ac2-083b-4836-96f7-d105dca97f22">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<text><![CDATA[INFORMACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="516" y="195" width="234" height="215" forecolor="#FFFFFF" uuid="0738d36e-0253-42fa-b38e-ca390145e5cb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="15.0"/>
+				</textElement>
+				<text><![CDATA[Se muestra el mapa con la ubicación del análisis como punto central, junto con gasolineras y estacionamientos cercanos. 
+
+Esto proporciona una visión clara del acceso a estos servicios en la zona de análisis.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement x="502" y="447" width="262" height="137" backcolor="#F8F8F8" uuid="c1f6efab-451b-4a42-8f47-d5ae7104d310">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="502" y="460" width="261" height="20" forecolor="#3C3C3B" uuid="eae07316-bf53-4556-9f7e-d5c0f3ca1adf">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<text><![CDATA[Leyenda del mapa]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="525" y="506" width="12" height="12" uuid="7a63f2dc-b117-4009-a3e7-dd84b1112c09">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "poisMapPinColorGasolineras" )]]></propertyExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="550" y="499" width="200" height="26" forecolor="#3C3C3B" uuid="16508e0c-b49a-45c5-88ae-3f446f362922">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Gasolineras" +($P{params}.get( "poisNumeroGasolineras" )!=null?(
+	" (" + $P{params}.get( "poisNumeroGasolineras" )  + ")<br/><font face='Montserrat'>La más cercana a " +$P{params}.get( "poisGasolineraCercana" ) +" metros.</font>"
+):"")]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="525" y="543" width="12" height="12" uuid="28d9ec7b-0370-4958-a287-8602b1913512">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "poisMapPinColorEstacionamientos" )]]></propertyExpression>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="550" y="536" width="200" height="26" forecolor="#3C3C3B" uuid="c3e2fd86-b3cb-444c-9082-739c9651abc7">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Estacionamientos" +($P{params}.get( "poisNumeroEstacionamientos" )!=null?(
+	" (" + $P{params}.get( "poisNumeroEstacionamientos" )  + ")<br/><font face='Montserrat'>El más cercano a " +$P{params}.get( "poisEstacionamientoCercano" ) +" metros.</font>"
+):"")]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

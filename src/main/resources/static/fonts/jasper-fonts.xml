@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="Montserrat Thin">
+		<normal><![CDATA[static/fonts/MontserratThin/Montserrat-Thin.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratThin/Montserrat-ThinItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat Black">
+		<normal><![CDATA[static/fonts/MontserratBlack/Montserrat-Black.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratBlack/Montserrat-BlackItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat">
+		<normal><![CDATA[static/fonts/Montserrat/Montserrat-Regular.ttf]]></normal>
+		<bold><![CDATA[static/fonts/Montserrat/Montserrat-Bold.ttf]]></bold>
+		<italic><![CDATA[static/fonts/Montserrat/Montserrat-Italic.ttf]]></italic>
+		<boldItalic><![CDATA[static/fonts/Montserrat/Montserrat-BoldItalic.ttf]]></boldItalic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat ExtraBold">
+		<normal><![CDATA[static/fonts/MontserratExtraBold/Montserrat-ExtraBold.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratExtraBold/Montserrat-ExtraBoldItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat ExtraLight">
+		<normal><![CDATA[static/fonts/MontserratExtraLight/Montserrat-ExtraLight.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratExtraLight/Montserrat-ExtraLightItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat Light">
+		<normal><![CDATA[static/fonts/MontserratLight/Montserrat-Light.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratLight/Montserrat-LightItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat Medium">
+		<normal><![CDATA[static/fonts/MontserratMedium/Montserrat-Medium.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratMedium/Montserrat-MediumItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+	<fontFamily name="Montserrat SemiBold">
+		<normal><![CDATA[static/fonts/MontserratSemiBold/Montserrat-SemiBold.ttf]]></normal>
+		<italic><![CDATA[static/fonts/MontserratSemiBold/Montserrat-SemiBoldItalic.ttf]]></italic>
+		<pdfEncoding><![CDATA[Identity-H]]></pdfEncoding>
+	</fontFamily>
+</fontFamilies>

@@ -1,0 +1,1309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="integral-9" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<subDataset name="Dataset1" uuid="013584f9-2f98-4302-8bd8-3625b26a249b">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+	</subDataset>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement mode="Transparent" x="0" y="0" width="792" height="0" isRemoveLineWhenBlank="true" uuid="18b17603-c665-4298-a1d4-86ffa4944393">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<printWhenExpression><![CDATA[0==1]]></printWhenExpression>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reports/integral/images/i9.png" ):
+"images/i9.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="28" y="22" width="722" height="40" forecolor="#3C3C3B" uuid="e4320e38-5839-48ad-9ff6-0baa25fd213c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Montserrat Medium" size="30"/>
+				</textElement>
+				<text><![CDATA[Pirámide de Maslow Inmobiliaria]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="56" width="722" height="40" forecolor="#3C3C3B" uuid="4067ac86-b289-419d-8553-755f06a503ab">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Montserrat" size="30"/>
+				</textElement>
+				<text><![CDATA[Versión reducida a máximo 15min. caminado.]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="28" y="100" width="722" height="16" forecolor="#A34673" uuid="0cbc81bc-0bb5-4c8e-89a7-f24a09c59553">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Horizontes Plenos:</font> Aire Libre, Artes y Cultura, Espíritu"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement mode="Opaque" x="322" y="155" width="148" height="39" backcolor="rgba(163, 70, 115, 0.3137255)" uuid="def44d24-ef50-4bc8-8ec5-eb3bdf26d902">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="28" y="195" width="719" height="16" forecolor="#62C6BC" uuid="aa0c6128-b0e9-4645-b4ff-7ec675dfb2c3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Estilo y Prestigio:</font> Clubes, Actividades deportivas, Plazas Comerciales, librerías y Museos"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement mode="Opaque" x="288" y="252" width="216" height="39" backcolor="rgba(98, 198, 188, 0.3137255)" uuid="d60afa99-780f-4195-ba63-bc0521f392a8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="28" y="292" width="719" height="16" forecolor="#EDCB5F" uuid="d482a9bd-8b05-48df-8252-28e580ca363d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Espacios de Conexión:</font> Super Mercados, Plazas y jardines, Cafeterías, Restaurantes interesantes, clubs"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement mode="Opaque" x="195" y="348" width="402" height="39" backcolor="rgba(237, 203, 95, 0.3137255)" uuid="14138db9-7d31-4820-8e50-bc4bc5249fb1">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="28" y="388" width="719" height="16" forecolor="#DB746D" uuid="f47eaa95-32c8-4fa2-b72c-379ca363cca0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Seguridad y Estabilidad:</font> Bancos , cajeros automáticos, Transporte público, gasolineras, bomberos y policías"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement mode="Opaque" x="136" y="444" width="521" height="39" backcolor="rgba(219, 116, 109, 0.3137255)" uuid="28f26b54-d412-4001-baed-4fec719014c8">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="28" y="485" width="719" height="16" forecolor="#E24062" uuid="94f402c9-b8e7-40ef-bdd0-1d567d155045">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Necesidades Básicas:</font> Tiendas, Mercados, Emergencias de salud y Farmacias"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="5">
+				<reportElement mode="Opaque" x="28" y="541" width="736" height="39" backcolor="rgba(226, 64, 98, 0.3137255)" uuid="85946123-e04e-40f2-82f4-7763c1675ca2">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement mode="Transparent" x="35" y="165" width="10" height="20" uuid="e0348c6c-ae0b-497a-a5e7-587f63d947e1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="159" width="115" height="31" forecolor="#3C3C3B" uuid="538881e6-072a-4aec-bea6-4785550bac73">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_5" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_5" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_5" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="165" width="10" height="20" uuid="2b3029a8-2c16-49a0-94ab-7d4f01305181">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="159" width="115" height="31" forecolor="#3C3C3B" uuid="85e48c8d-5834-4eaf-939a-aa3643b4cd7d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_6" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_6" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_6" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="165" width="10" height="20" uuid="7726906e-8b6a-4d0c-b0f4-e56ddb28ba87">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="159" width="115" height="31" forecolor="#3C3C3B" uuid="6c39e9d1-0e67-4d31-9e43-707040b9f4e1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>Eugenia es mi pu</font><br/>22min. - 1,687m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="165" width="10" height="20" uuid="1dd08f44-011c-4a4a-b105-dca504ff90bb">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="159" width="115" height="31" forecolor="#3C3C3B" uuid="f9090395-dfa6-4c8e-8b6a-ea5cc4b83b78">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_8" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_8" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_8" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="165" width="10" height="20" uuid="e7ea607b-f4d7-4b83-9598-674c812b3c76">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="159" width="115" height="31" forecolor="#3C3C3B" uuid="e1bb34dc-df16-422b-b02a-dfc4582e3134">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_9" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_9" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_9" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="126" width="10" height="20" uuid="95fc9e41-8e65-442f-96e7-0785f77aee50">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="120" width="115" height="31" forecolor="#3C3C3B" uuid="421acda7-567d-4529-b9e0-2cc2c1770c4c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_0" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_0" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_0" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="126" width="10" height="20" uuid="3013b178-368d-471d-9969-b3320d4ba770">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="120" width="115" height="31" forecolor="#3C3C3B" uuid="34336fa9-c450-43f7-86ff-d50a2fec432c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_1" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_1" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_1" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="126" width="10" height="20" uuid="a6620421-761a-497c-95c3-37d7e9f9c613">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="120" width="115" height="31" forecolor="#3C3C3B" uuid="b066a528-c0af-4080-afac-aa7da46bbd1b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_2" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_2" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_2" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="126" width="10" height="20" uuid="577e3787-c07f-4ca6-9d86-e16c30dd7506">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="120" width="115" height="31" forecolor="#3C3C3B" uuid="6c31c736-002a-4009-a0fa-d99555c7c725">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_3" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_3" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_3" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="126" width="10" height="20" uuid="19e590f1-c501-4f69-8dcf-f17f71d286d0">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="120" width="115" height="31" forecolor="#3C3C3B" uuid="11065c59-2eed-4f7c-80cb-992dd61938fe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_NOMBRE_4" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_5_MINUTOS_4" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_5_METROS_4" ) +"m."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="256" width="115" height="31" forecolor="#3C3C3B" uuid="f60112bd-fd6f-495b-a777-3f24efb295cb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_5" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_5" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_5" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="262" width="10" height="20" uuid="519d8036-7d22-4b8c-b6b2-d89a9e94d3d1">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="183" y="262" width="10" height="20" uuid="b4b87641-88fb-4dfc-a1fb-080bda22469d">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="256" width="115" height="31" forecolor="#3C3C3B" uuid="85b74b59-8c12-4503-a09d-b231e5cf022f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_6" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_6" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_6" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="262" width="10" height="20" uuid="4713dff1-b079-4102-abd9-7fb64eaf9d87">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="256" width="115" height="31" forecolor="#3C3C3B" uuid="41fef53b-a844-4e60-bae2-da2a6275178e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_7" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_7" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_7" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="262" width="10" height="20" uuid="ef9f3862-5b44-4448-bfdf-a4c4431312cf">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="256" width="115" height="31" forecolor="#3C3C3B" uuid="fec0be94-c734-44c3-9a7a-ca7327a93f99">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_8" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_8" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_8" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="262" width="10" height="20" uuid="02bce604-03e9-4a33-af80-bfaa0c5f62c4">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="256" width="115" height="31" forecolor="#3C3C3B" uuid="18fdbab6-88b6-45aa-bda8-4419d5dd4554">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_9" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_9" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_9" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="223" width="10" height="20" uuid="3075fc0b-cf79-4ff8-ad56-484b751abc34">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="217" width="115" height="31" forecolor="#3C3C3B" uuid="5a2090f2-0172-4a30-9ded-74c2aa5caddc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_0" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_0" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_0" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="223" width="10" height="20" uuid="4fba11dd-9f94-47ee-b571-c7677d8a0f0f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="217" width="115" height="31" forecolor="#3C3C3B" uuid="5601cf2b-e65c-448c-b0de-0f1c033f3c58">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_1" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_1" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_1" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="223" width="10" height="20" uuid="cc8d1920-fd75-46ab-a87b-181099aa7cec">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="217" width="115" height="31" forecolor="#3C3C3B" uuid="ebc41c0c-8c07-4dd1-8e51-9ab7fe48f38e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_2" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_2" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_2" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="223" width="10" height="20" uuid="a1e3b84b-f027-42ac-903e-0314776c77bd">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="217" width="115" height="31" forecolor="#3C3C3B" uuid="7d7b2d81-46fd-4850-908c-146daf09f7ca">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_3" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_3" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_3" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="223" width="10" height="20" uuid="8af0c51f-856d-429b-964c-b76fd6c78a77">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="217" width="115" height="31" forecolor="#3C3C3B" uuid="9b48e73d-e7ab-4e3c-b4d9-bceddaf7384e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_NOMBRE_4" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_4_MINUTOS_4" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_4_METROS_4" ) +"m."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="352" width="115" height="31" forecolor="#3C3C3B" uuid="abfa095e-1338-498e-ab97-4b2b576ae7cd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_5" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_5" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_5" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="358" width="10" height="20" uuid="bdcd7832-bd5a-4f0d-8be1-ef9532b1656b">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="183" y="358" width="10" height="20" uuid="1c12eaf7-0dc9-4f46-a31f-716c00021829">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="352" width="115" height="31" forecolor="#3C3C3B" uuid="26648343-5817-48de-bc98-0efffe3691a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_6" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_6" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_6" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="358" width="10" height="20" uuid="eb40c587-9df5-4d49-8b75-2ed1e3f0044f">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="352" width="115" height="31" forecolor="#3C3C3B" uuid="5cd547bb-c556-4c7e-9393-8175d7380c80">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_7" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_7" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_7" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="358" width="10" height="20" uuid="7d4a35bc-ebd4-4261-8f0b-fd89b76d6355">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="352" width="115" height="31" forecolor="#3C3C3B" uuid="02f7529f-4b5f-4762-baa1-a49ebd4d89fe">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_8" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_8" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_8" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="358" width="10" height="20" uuid="243339e1-9a8f-4db3-8d2e-ed0db6cfa536">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="352" width="115" height="31" forecolor="#3C3C3B" uuid="e2bd39b7-3fbd-4372-87c4-5cfe80ff976a">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_9" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_9" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_9" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="319" width="10" height="20" uuid="addddc44-b9c1-4570-92c3-e1b2fd2ec50c">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="313" width="115" height="31" forecolor="#3C3C3B" uuid="531eb85e-30b4-42ef-8b4e-f8bef14b4af6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_0" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_0" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_0" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="319" width="10" height="20" uuid="2d2d4f63-7a55-4c61-80c0-66750acac320">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="313" width="115" height="31" forecolor="#3C3C3B" uuid="4c3d0beb-a5e9-45ef-9259-23d4e3a165f0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_1" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_1" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_1" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="319" width="10" height="20" uuid="ba2ac7b4-c73c-43b2-8a32-ada83b2f0bb6">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="313" width="115" height="31" forecolor="#3C3C3B" uuid="5753c11e-00b4-4556-b869-3bb0dc70be0c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_2" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_2" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_2" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="319" width="10" height="20" uuid="5e79a625-8940-491b-98d3-0fe3ab3f70a4">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="313" width="115" height="31" forecolor="#3C3C3B" uuid="cb85c3ee-aa1c-47a2-85b3-5815cc473053">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_3" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_3" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_3" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="319" width="10" height="20" uuid="10d5026f-7179-471b-8406-f0d23d11b040">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="313" width="115" height="31" forecolor="#3C3C3B" uuid="50787a56-6a93-44b2-9508-bc01a71b44f4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_NOMBRE_4" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_3_MINUTOS_4" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_3_METROS_4" ) +"m."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="448" width="115" height="31" forecolor="#3C3C3B" uuid="ac9c2eb0-2b95-41d8-a4aa-88ab95f59333">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_5" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_5" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_5" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="454" width="10" height="20" uuid="61b4f17b-d984-4b95-b7ac-ed9cdebd199d">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="183" y="454" width="10" height="20" uuid="325a4600-5566-4d18-b047-7566c70363eb">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="448" width="115" height="31" forecolor="#3C3C3B" uuid="a51be5f3-e16a-4f06-a1cf-829df09ddebb">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_6" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_6" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_6" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="454" width="10" height="20" uuid="f86eedd5-d271-47b1-8e85-6c556028d232">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="448" width="115" height="31" forecolor="#3C3C3B" uuid="32ea477e-3382-41d7-b8c3-d4a82f5e1e76">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_7" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_7" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_7" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="454" width="10" height="20" uuid="4e51933e-cf45-4319-90c7-4a1d954b75bf">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="448" width="115" height="31" forecolor="#3C3C3B" uuid="46309e28-7e26-4abc-827c-7304f4fee5b2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_8" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_8" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_8" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="454" width="10" height="20" uuid="c96ce493-7be9-4100-b98b-9e1001597c05">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="448" width="115" height="31" forecolor="#3C3C3B" uuid="8e7965e5-ff38-4aaa-bcda-d5bc4fe78601">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_9" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_9" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_9" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="415" width="10" height="20" uuid="bc65cc72-1a30-46b6-ac63-75086c7ef506">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="409" width="115" height="31" forecolor="#3C3C3B" uuid="63328050-5df1-4376-864b-e08ade99e563">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_0" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_0" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_0" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="415" width="10" height="20" uuid="248a7414-e148-45ef-910a-719bec9256c5">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="409" width="115" height="31" forecolor="#3C3C3B" uuid="c93aab10-d8c0-4c79-9a7f-3ac734a440a6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_1" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_1" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_1" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="415" width="10" height="20" uuid="54e611dc-2125-4c07-9228-0fb68c133ccc">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="409" width="115" height="31" forecolor="#3C3C3B" uuid="50979860-1ef2-4d2c-8adc-fc7ddc811dde">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_2" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_2" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_2" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="415" width="10" height="20" uuid="272d4079-c61b-4d41-8b9e-3c7380ca64ed">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="409" width="115" height="31" forecolor="#3C3C3B" uuid="a08bdc04-2534-4ed3-8b6e-ecf18f834f3c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_3" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_3" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_3" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="415" width="10" height="20" uuid="ceada889-fc3f-46c4-b9af-9cc76c14a4bf">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="409" width="115" height="31" forecolor="#3C3C3B" uuid="2cb29a6a-33a9-49db-b797-aa416de358ec">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_NOMBRE_4" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_2_MINUTOS_4" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_2_METROS_4" ) +"m."]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="545" width="115" height="31" forecolor="#3C3C3B" uuid="185fba4f-e2bb-4f0c-a486-dcfda91d7e25">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_5" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_5" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_5" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="551" width="10" height="20" uuid="7501b70c-b178-4535-842a-3777dd1f4223">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_5" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement mode="Transparent" x="183" y="551" width="10" height="20" uuid="128d4737-eefd-4db9-a11c-0d6218eb3ff0">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="545" width="115" height="31" forecolor="#3C3C3B" uuid="3ce38590-20d6-431c-ab55-dc1cf6b32f5d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_6" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_6" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_6" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_6" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="551" width="10" height="20" uuid="fc4145ad-e683-466c-bed4-7703b9fc6a17">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="545" width="115" height="31" forecolor="#3C3C3B" uuid="bb3765d4-457a-4552-b707-8bbb9954043f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_7" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_7" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_7" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_7" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="551" width="10" height="20" uuid="4de9b4a3-315b-4dc3-845e-3486636bffc6">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="545" width="115" height="31" forecolor="#3C3C3B" uuid="93627cc9-01b9-426e-8d82-e954d4fb497d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_8" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_8" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_8" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_8" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="551" width="10" height="20" uuid="20c338f0-2316-44c3-8fd9-54ee8295676b">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="545" width="115" height="31" forecolor="#3C3C3B" uuid="7fc346eb-a9eb-49aa-9298-06f5d663e97d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_9" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_9" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_9" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_9" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="35" y="512" width="10" height="20" uuid="eb83c55c-7477-4773-8f82-7ff5b650b9f2">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="52" y="506" width="115" height="31" forecolor="#3C3C3B" uuid="2f8b25ac-0c0d-4102-a53a-be04defadc56">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_0" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_0" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_0" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_0" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="183" y="512" width="10" height="20" uuid="49f8bd16-9939-4e0f-b1ca-070d41979312">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="200" y="506" width="115" height="31" forecolor="#3C3C3B" uuid="1839bb25-604e-410d-8a0a-ccc61ebbcdae">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_1" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_1" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_1" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_1" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="331" y="512" width="10" height="20" uuid="d8e91a0b-4d17-4112-8127-392a3bfeab24">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="348" y="506" width="115" height="31" forecolor="#3C3C3B" uuid="ea308489-49e8-472d-bd78-903f62d2110b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_2" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_2" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_2" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_2" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="478" y="512" width="10" height="20" uuid="81b7ae38-edc9-435e-9945-83065b4ea28c">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="495" y="506" width="115" height="31" forecolor="#3C3C3B" uuid="44dc3f18-7f13-4cb8-bfcf-73cd9f082176">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_3" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_3" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_3" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_3" ) +"m."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="627" y="512" width="10" height="20" uuid="357cf808-9be0-4da8-8937-cc26225bb536">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-piramide-caminando.svg" ):
+"images/icon-piramide-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="644" y="506" width="115" height="31" forecolor="#3C3C3B" uuid="aeefd6c0-d297-4513-a21c-b3bc9e542720">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_4" ) != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_NOMBRE_4" ) +"</font><br/>" + $P{params}.get( "POIS_MASLOW_NIVEL_1_MINUTOS_4" ) +"min. - " + $P{params}.get( "POIS_MASLOW_NIVEL_1_METROS_4" ) +"m."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

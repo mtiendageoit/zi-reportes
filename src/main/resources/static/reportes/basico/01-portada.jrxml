@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="basico-1" printOrder="Horizontal" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<image>
+				<reportElement x="28" y="28" width="736" height="556" uuid="618e4a19-b898-4791-b33e-89523515a818">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/basico/images/fondo-amarillo.png" ):
+"images/fondo-amarillo.png"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="55" y="46" width="354" height="20" forecolor="#FFFFFF" uuid="f93ec458-dea6-45c2-8b58-764b45d0ae6f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="14"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "report_date" ) + " | " +  $P{params}.get( "report_time" )]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="55" y="72" width="484" height="301" forecolor="#FFFFFF" uuid="da68b3d4-2c4d-47d0-8e5e-dbd924775ea4"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Montserrat Black" size="80"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="51.0"/>
+				</textElement>
+				<text><![CDATA[Reporte
+Básico de
+ubicación.]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement mode="Transparent" x="562" y="46" width="174" height="20" forecolor="#FFFFFF" uuid="6bcb6ecf-03ca-4854-bb42-d4872b240696">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["zonainmueble.mx"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://zonainmueble.mx"]]></hyperlinkReferenceExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement mode="Opaque" x="99" y="485" width="594" height="69" forecolor="#FFFFFF" uuid="b8672259-480b-48b4-9632-bb2b3e3196f4">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Opaque" x="126" y="500" width="39" height="39" uuid="ddcb6f5a-9453-4902-bb04-1807ce6d2bbd">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/basico/images/icon-zi-amarillo.svg" ):
+"images/icon-zi-amarillo.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="180" y="490" width="486" height="59" forecolor="#3C3C3B" uuid="b8279ed5-bb0c-4bd1-b6ec-77693a7da617">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="14.63"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>UBICACIÓN DE ANÁLISIS</font><br/>" +$P{params}.get( "address" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

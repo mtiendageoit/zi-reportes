@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="integral-9" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<staticText>
+				<reportElement x="28" y="21" width="736" height="40" forecolor="#3C3C3B" uuid="15c64adf-613a-498c-9079-1dada241c9f9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Montserrat" size="30"/>
+				</textElement>
+				<text><![CDATA[Mapa de Movilidad, 15 minutos caminando]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="55" width="736" height="40" forecolor="#3C3C3B" uuid="1e0fc73b-ea79-4290-b874-8aa7b108ea3c"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Montserrat Medium" size="30"/>
+				</textElement>
+				<text><![CDATA[Estaciones y paradas de transporte público]]></text>
+			</staticText>
+			<line>
+				<reportElement x="28" y="112" width="736" height="1" forecolor="#3C3C3B" uuid="e6237ea3-f338-4d42-a5c0-78e6511b927d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Opaque" x="28" y="137" width="448" height="448" uuid="84755050-2a1e-45b0-99bd-03aebf71fade">
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.radius" type="simpleText"><![CDATA[10]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#F49700"/>
+				</box>
+				<imageExpression><![CDATA[$P{params}.get( "mapImageMovilidadEstaciones")]]></imageExpression>
+			</image>
+			<rectangle radius="15">
+				<reportElement mode="Transparent" x="20" y="129" width="464" height="464" uuid="55219e36-3ce2-4ad2-a598-9855d08d2143">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="17.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="28" y="137" width="448" height="448" uuid="8176597d-3189-4b5c-aa71-183cc65251b9">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#F49700"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement x="502" y="137" width="262" height="242" backcolor="#F8F8F8" uuid="1fdbf1c8-217c-447c-ad0d-53cb1477e510">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="502" y="146" width="261" height="20" forecolor="#3C3C3B" uuid="37ae2560-16da-4025-8f5b-8f6c9cd0980e">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<text><![CDATA[Leyenda del mapa]]></text>
+			</staticText>
+			<ellipse>
+				<reportElement x="516" y="181" width="12" height="12" backcolor="#007BFF" uuid="be2db3c0-41a8-4d7c-8d52-39f3b53f478d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="179" width="209" height="20" forecolor="#3C3C3B" uuid="e0c69097-aea7-4ca7-b22e-2ce806fcda2a">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Acceso a transporte público"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="516" y="210" width="12" height="12" backcolor="#FF0000" uuid="e445781d-2fd0-46a5-9908-9862eef712c8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="209" width="209" height="20" forecolor="#3C3C3B" uuid="a3c3b41d-97d2-46d6-9ed6-7abf49d8aea6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Tren / Metro"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="516" y="239" width="12" height="12" backcolor="#28A745" uuid="722f1369-7e62-4cac-b5c2-1a0414c65767">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="238" width="209" height="20" forecolor="#3C3C3B" uuid="1701bcee-126e-4c97-b02e-fdcab02ee426">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Parada de autobus"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="516" y="268" width="12" height="12" backcolor="#6F42C1" uuid="eb4741c6-edc8-47f5-b290-1db1e411c2a8">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="266" width="209" height="20" forecolor="#3C3C3B" uuid="8e5b350e-3941-494a-a833-0e228ec6562c">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Teleférico"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="516" y="297" width="12" height="12" backcolor="#F49700" uuid="e64f54f3-e46e-488b-9689-91ba4d5bfa2e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="295" width="209" height="31" forecolor="#3C3C3B" uuid="ec49949d-6004-437e-90de-0296691dea30">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Autobus tránsito rápido<br/><font face='Montserrat'>(Metrobus/MexiBus)</font>"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement x="516" y="338" width="12" height="12" backcolor="#FBB700" uuid="1fa09f91-ae31-44a4-a397-3534339dfb24">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="536" y="337" width="209" height="31" forecolor="#3C3C3B" uuid="2ff33cfb-80b9-4e66-9759-a723baa70158">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.forecolor"><![CDATA[$P{params}.get( "grafica_color_1" )]]></propertyExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Servicio de transporte variado<br/><font face='Montserrat'>(sitio de taxi)</font>"]]></textFieldExpression>
+			</textField>
+			<rectangle radius="10">
+				<reportElement mode="Opaque" x="502" y="390" width="262" height="194" backcolor="#F49700" uuid="340e8fa8-a298-40b5-b2fd-717ba1c6e176">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="516" y="400" width="228" height="20" forecolor="#FFFFFF" uuid="22787ac2-083b-4836-96f7-d105dca97f22">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<text><![CDATA[ESTE INFORME ES ESENCIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="516" y="430" width="234" height="144" forecolor="#FFFFFF" uuid="0738d36e-0253-42fa-b38e-ca390145e5cb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="15.0"/>
+				</textElement>
+				<text><![CDATA[Para cualquier persona que esté considerando comprar, rentar o invertir en una propiedad, ya que proporciona un vistazo rápido de la mayoría de estaciones de transporte público y privado de pasajeros cercanos a la ubicación del análisis.]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

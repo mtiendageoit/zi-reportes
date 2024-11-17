@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="integral-1" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<image>
+				<reportElement x="28" y="28" width="736" height="556" uuid="07a367f2-1c79-4f27-992c-5f0b409635f3">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/fondo-naranja.png" ):
+"images/fondo-naranja.png"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="55" y="46" width="354" height="20" forecolor="#FFFFFF" uuid="24dd64b7-cbaf-4d7d-8db0-d9caa28ace23">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="14"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "report_date" ) + " | " +  $P{params}.get( "report_time" )]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="ScaleFont" hyperlinkType="Reference" hyperlinkTarget="Blank">
+				<reportElement mode="Transparent" x="562" y="46" width="174" height="20" forecolor="#FFFFFF" uuid="84b0fec8-41e2-4e8b-92fc-c98643690883">
+					<property name="com.jaspersoft.studio.unit.width" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["zonainmueble.mx"]]></textFieldExpression>
+				<hyperlinkReferenceExpression><![CDATA["https://zonainmueble.mx"]]></hyperlinkReferenceExpression>
+			</textField>
+			<staticText>
+				<reportElement mode="Transparent" x="55" y="72" width="681" height="368" forecolor="#FFFFFF" uuid="194a8883-2ae2-490f-9785-cf8084462950"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Montserrat Black" size="80"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="51.0"/>
+				</textElement>
+				<text><![CDATA[Reporte
+Integral Inmobiliario.]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement mode="Opaque" x="99" y="485" width="594" height="69" forecolor="#FFFFFF" uuid="8e4c818f-774e-4acf-9282-41ad5c254930">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image scaleImage="FillFrame">
+				<reportElement mode="Opaque" x="126" y="500" width="39" height="39" uuid="5a4f752f-b375-4b2a-960c-c97eee86b71f">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-zi-amarillo.svg" ):
+"images/icon-zi-amarillo.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="180" y="490" width="486" height="59" forecolor="#3C3C3B" uuid="988669d5-6b05-4ff3-8f87-81b11b33affd">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="14.63"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font face='Montserrat SemiBold'>UBICACIÓN DE ANÁLISIS</font><br/>" +$P{params}.get( "address" )]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

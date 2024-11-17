@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="basico-2" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Transparent" x="28" y="22" width="350" height="40" forecolor="#3C3C3B" uuid="3b2b1adc-fdbb-4922-b9f2-c1ed7f903f9c"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Montserrat" size="30" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Reporte]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="28" y="55" width="350" height="40" forecolor="#3C3C3B" uuid="e73ba5f3-fc16-4d98-b4bc-8593d4735bdb"/>
+				<textElement textAlignment="Left" verticalAlignment="Top">
+					<font fontName="Montserrat Medium" size="30" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Básico de ubicación]]></text>
+			</staticText>
+			<line>
+				<reportElement x="28" y="111" width="448" height="1" forecolor="#3C3C3B" uuid="613a171e-84d1-4ba0-942d-07e2ca6ae8af">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#3C3C3B"/>
+				</graphicElement>
+			</line>
+			<rectangle radius="10">
+				<reportElement x="28" y="136" width="448" height="68" backcolor="#F8F8F8" uuid="6e94d797-f52d-4eaf-8b42-4f7b68a82869">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="55" y="144" width="52" height="52" uuid="2072bff8-5307-4ba9-9e29-3932f6c3f2f7">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/basico/images/icon-fecha.svg" ):
+"images/icon-fecha.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="118" y="140" width="350" height="60" forecolor="#3C3C3B" uuid="a38c8ec6-2191-42ab-b1fe-3e7136c40a94">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha y hora del Reporte<br/><font face='Montserrat SemiBold'>El " + $P{params}.get( "report_date" ) + " a las " +  $P{params}.get( "report_time" ) + ".</font>"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="55" y="236" width="52" height="52" uuid="956572e2-579d-44b5-8fba-e864d3e6ec36">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/basico/images/icon-caminando.svg" ):
+"images/icon-caminando.svg"]]></imageExpression>
+			</image>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="118" y="232" width="350" height="60" forecolor="#3C3C3B" uuid="d3a6a9fc-7c6c-4deb-8daf-f8448a345688">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+					<paragraph lineSpacing="Single" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Medio de transporte<br/><font face='Montserrat SemiBold'>" + $P{params}.get( "isochrone_time_minutes" ) + " minutos " +  $P{params}.get( "isochrone_transport_type" ) + ".</font>"]]></textFieldExpression>
+			</textField>
+			<image scaleImage="RealSize" hAlign="Center" vAlign="Middle">
+				<reportElement x="28" y="320" width="447" height="263" uuid="72922b70-5165-40a3-bbdd-bfec063d3d9b">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="0.0" lineColor="#242424"/>
+				</box>
+				<imageExpression><![CDATA[$P{params}.get( "mapImageGenerales" )]]></imageExpression>
+			</image>
+			<rectangle radius="18">
+				<reportElement mode="Transparent" x="21" y="313" width="460" height="277" uuid="1e8f53ed-1ef2-42d2-b958-066e216838d0">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="13.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="12">
+				<reportElement mode="Transparent" x="28" y="320" width="447" height="263" uuid="3168c1b3-9795-4982-ba69-9f150a3c02e4">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="pixel"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#FBB700"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="20">
+				<reportElement mode="Opaque" x="502" y="28" width="262" height="556" backcolor="#FBB700" uuid="e1473c08-96d3-4b50-be8e-a11573435c0a">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="567" y="80" width="132" height="114" uuid="2178f408-1acf-445b-ab11-22f400b09645">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/basico/images/icon-zi-full-banco.svg" ):
+"images/icon-zi-full-banco.svg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="516" y="260" width="228" height="34" forecolor="#FFFFFF" uuid="c82b7bce-222e-4bbc-99bc-7fb8138926b4">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12" isBold="false"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<text><![CDATA[¿QUÉ ENCONTRARÉ
+EN ESTE REPORTE BÁSICO?]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
+				<reportElement x="516" y="317" width="238" height="260" forecolor="#FFFFFF" uuid="ed62db9a-1eaf-4d89-9612-7eb9b3516208">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Top" markup="styled">
+					<font fontName="Montserrat Medium" size="12"/>
+					<paragraph lineSpacing="Fixed" lineSpacingSize="16.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA["El reporte básico de ubicación te entrega datos de gran valor del entorno demográfico entre otros factores de la ubicación del inmueble a partir de un área de cobertura (polígono) la cual es determinada     por la distancia recorrida desde la ubicación de análisis " + $P{params}.get( "isochrone_transport_type" ) +" " + $P{params}.get( "isochrone_time_minutes" ) +" minutos en cualquier dirección posible."]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

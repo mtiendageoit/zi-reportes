@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="integral-8" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="792" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7d48c48d-d56d-4025-bb85-7dc3c4157b5b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="params" class="java.util.Map" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<detail>
+		<band height="612" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement mode="Opaque" x="26" y="27" width="448" height="200" backcolor="#F49700" uuid="6ce4b0e6-b0cb-4466-bd90-d16941013ac2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="48" y="42" width="72" height="37" forecolor="#FFFFFF" uuid="0e196144-e116-48d4-bfd8-5ef64d6ca4d4"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat" size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "nse_tops_poblacion_porcentaje" ) +"<font size='14'>%</font>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="125" y="43" width="330" height="37" forecolor="#FFFFFF" uuid="3a94284f-dfc5-426a-840f-09df253a7b2a"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dentro de los niveles de bienestar preponderantes de la población son:]]></text>
+			</staticText>
+			<rectangle radius="13">
+				<reportElement mode="Transparent" x="45" y="94" width="413" height="104" backcolor="#F49700" uuid="93454ace-2e55-49f8-b34d-95731d71a409">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="6.0" lineColor="#F49700"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="48" y="97" width="407" height="98" forecolor="#4D3A6D" uuid="aedbc798-6bad-4a10-b385-f43f45d36147">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineColor="#4D3A6D"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Opaque" x="48" y="97" width="142" height="38" forecolor="#3C3C3B" uuid="29d610ea-e50e-45bb-bf2d-2eb8c8653622">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<text><![CDATA[Nivel de Bienestar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="190" y="97" width="266" height="38" forecolor="#3C3C3B" uuid="a9e04e30-45a8-4ba4-b0ad-90bb162a3e6b">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<text><![CDATA[Ingreso mensual Promedio MXN]]></text>
+			</staticText>
+			<textField textAdjust="ScaleFont">
+				<reportElement mode="Opaque" x="48" y="135" width="142" height="30" forecolor="#FFFFFF" backcolor="#D1819E" uuid="0b46c2cb-32f5-4328-95ac-28f07401aaa2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "nse_top_1_color" )]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "nse_top_1_nombre" ) + " " + $P{params}.get( "nse_top_1_nse" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="135" width="266" height="30" forecolor="#FFFFFF" backcolor="#D1819E" uuid="26ef3f83-fef4-4cb4-865c-fa392687957f">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "nse_top_1_color" )]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "nse_top_1_desc" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="48" y="165" width="142" height="30" forecolor="#FFFFFF" backcolor="#8198D1" uuid="93175563-4a1f-4a76-addd-7b772fdd666d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "nse_top_2_color" )]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "nse_top_2_nombre" ) + " " + $P{params}.get( "nse_top_2_nse" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="190" y="165" width="266" height="30" forecolor="#FFFFFF" backcolor="#8198D1" uuid="d4e87cee-22cb-419a-bdd1-aa3b6bd7ec39">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<propertyExpression name="net.sf.jasperreports.style.backcolor"><![CDATA[$P{params}.get( "nse_top_2_color" )]]></propertyExpression>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#4D3A6D"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{params}.get( "nse_top_2_desc" )]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Middle" onErrorType="Blank">
+				<reportElement mode="Opaque" x="26" y="251" width="448" height="220" isRemoveLineWhenBlank="true" uuid="7d85d928-5108-404e-9cda-9b5b3b49d344">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<box padding="0">
+					<pen lineWidth="0.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/publicidad-zi-muro.png" ):
+"images/publicidad-zi-muro.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="28" y="486" width="262" height="23" forecolor="#F49700" uuid="c5809dcb-d386-4659-a82a-8a7da6730b6a"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Montserrat" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRECIO DE INMUEBLES POR m2]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="28" y="509" width="446" height="35" forecolor="#3C3C3B" uuid="23ae5daf-b43b-40a1-b275-909a24ee323c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["En transacciones de venta en comparación con los datos de " + $P{params}.get( "nombre_edo" ) + "."]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="28" y="548" width="446" height="37" uuid="8c6d6a78-ffdb-4558-a51b-ef0c081b0635">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/img-precio-inmueble-m2.png" ):
+"images/img-precio-inmueble-m2.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="36" y="557" width="100" height="20" forecolor="#FFFFFF" uuid="66081163-f19b-460f-b37d-6cca1cbae031">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get("precio_m2") != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["$" + $P{params}.get( "precio_m2_min" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="136" y="557" width="220" height="20" forecolor="#FFFFFF" uuid="d9427d61-b4f5-4403-ab7b-4f83aedf2a89">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get("precio_m2") != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat ExtraBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["$" + $P{params}.get( "precio_m2" )]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="357" y="557" width="100" height="20" forecolor="#FFFFFF" uuid="bf87f30e-9fde-4af5-a8f0-fefcf35596a2">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<printWhenExpression><![CDATA[$P{params}.get("precio_m2") != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA["$" + $P{params}.get( "precio_m2_max" )]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement mode="Transparent" x="235" y="578" width="22" height="18" uuid="749d910b-ca07-4ee6-b3dd-e3bfdd54ec11">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/img-indicador-preciom2.svg" ):
+"images/img-indicador-preciom2.svg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="520" y="20" width="244" height="37" forecolor="#3C3C3B" uuid="e7ddbd08-111c-4f98-8de6-0035b7274150"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Montserrat SemiBold" size="12"/>
+				</textElement>
+				<text><![CDATA[PROPIEDAD DE 90 M2 CONSTRUIDOS A UN COSTO PROMEDIO DE: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="502" y="68" width="262" height="53" forecolor="#F49700" uuid="a88b12ef-4567-4cc7-a26d-792c534a3205">
+					<printWhenExpression><![CDATA[$P{params}.get("precio_m2") != null]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Montserrat SemiBold" size="40"/>
+				</textElement>
+				<textFieldExpression><![CDATA["$" + $P{params}.get( "precio_m2_90" ) + "MXN"]]></textFieldExpression>
+			</textField>
+			<image scaleImage="FillFrame">
+				<reportElement x="517" y="154" width="232" height="416" uuid="b42744bc-d968-4164-9027-54b751409dde">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineColor="#FFFFFF"/>
+				</box>
+				<imageExpression><![CDATA[$P{params}.get( "bienestarPrecioinmueble")]]></imageExpression>
+			</image>
+			<rectangle radius="20">
+				<reportElement mode="Transparent" x="507" y="144" width="252" height="436" backcolor="#471D1D" uuid="9c5e57e1-b224-4fcd-8629-89c9cf9ec9ea">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="20.0" lineColor="#F8F8F8"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="517" y="154" width="232" height="416" backcolor="#F8F8F8" uuid="4cc0be46-d2f2-40c6-b341-79d5836111eb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#5EE02B"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</detail>
+</jasperReport>

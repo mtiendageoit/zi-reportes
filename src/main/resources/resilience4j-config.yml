@@ -1,0 +1,13 @@
+resilience4j:
+  retry:
+    instances:
+      hereMapsPoisRequest:
+        maxAttempts: 5
+        waitDuration: 1s
+        enableExponentialBackoff: true
+        exponentialBackoffMultiplier: 2
+      hereMapsIsolineRequest:
+        maxAttempts: 5
+        waitDuration: 1s
+        enableExponentialBackoff: true
+        exponentialBackoffMultiplier: 2
