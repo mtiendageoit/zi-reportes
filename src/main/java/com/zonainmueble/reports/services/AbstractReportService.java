@@ -145,8 +145,7 @@ public abstract class AbstractReportService implements ReportService {
     return categories.stream()
         .peek(category -> category.setCount(count.getOrDefault(category.getKey(), 0L).intValue()))
         .filter(category -> category.getCount() > 0)
-        .sorted(Comparator.comparingInt(PoiCategory::getCount).reversed())
-        .collect(Collectors.toList());
+        .sorted(Comparator.comparingInt(PoiCategory::getCount).reversed()).toList();
   }
 
   protected List<Marker> markersFrom(List<Poi> pois, List<PoiCategory> categories, MarkerSize size) {

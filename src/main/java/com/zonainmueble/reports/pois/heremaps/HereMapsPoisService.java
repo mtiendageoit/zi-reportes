@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 
 import com.zonainmueble.reports.geometry.Coordinate;
 import com.zonainmueble.reports.geometry.Extent;
+import com.zonainmueble.reports.pois.Address;
 import com.zonainmueble.reports.pois.PoisRequest;
 import com.zonainmueble.reports.pois.PoisResponse;
 import com.zonainmueble.reports.services.PoisService;
@@ -43,7 +44,7 @@ public class HereMapsPoisService implements PoisService {
 
       List<Poi> pois = response.getBody().getItems().stream()
           .filter(item -> item.getPrimaryCategory().isPresent() && item.getResultType().equalsIgnoreCase("place"))
-          .collect(Collectors.toList());
+          .toList();
       response.getBody().setItems(pois);
 
       return responseFrom(response.getBody());
@@ -60,6 +61,12 @@ public class HereMapsPoisService implements PoisService {
           com.zonainmueble.reports.pois.Poi poi = new com.zonainmueble.reports.pois.Poi();
           BeanUtils.copyProperties(i, poi);
           poi.setLocation(new Coordinate(i.getPosition().getLat(), i.getPosition().getLng()));
+
+          if (i.getAddress() != null && i.getAddress().getLabel() != null) {
+            poi.setAddress(new Address());
+            poi.getAddress().setLabel(i.getAddress().getLabel().replace(i.getTitle() + ",", "").trim());
+          }
+
           return poi;
         }).collect(Collectors.toList());
 

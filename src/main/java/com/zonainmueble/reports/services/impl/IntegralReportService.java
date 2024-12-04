@@ -68,11 +68,12 @@ public class IntegralReportService extends BasicReportService {
         .precioMetroCuadrado(mun.getClaveEdo(), mun.getClaveMun());
 
     Map<String, Object> params = new HashMap<String, Object>();
-    params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
-    params.putAll(bienestarIngresosParams(input, mun, walkIsos, preciom2.isPresent()));
-    params.putAll(movilidadParams(input, walkIsos));
+    // params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
+    // params.putAll(bienestarIngresosParams(input, mun, walkIsos,
+    // preciom2.isPresent()));
+    // params.putAll(movilidadParams(input, walkIsos));
     params.putAll(piramideMaslowParams(walkIsos));
-    params.putAll(conclusionParams(params));
+    // params.putAll(conclusionParams(params));
     return params;
   }
 
@@ -93,14 +94,42 @@ public class IntegralReportService extends BasicReportService {
     Map<NivelMaslow, List<Poi>> poisNivelMaslow = new HashMap<NivelMaslow, List<Poi>>();
     for (NivelMaslow nivel : NivelMaslow.values()) {
       List<PoiMaslowCategory> cats = poisCategories.stream().filter(i -> i.getNivelMaslow() == nivel.getValue())
-          .collect(Collectors.toList());
+          .toList();
       poisNivelMaslow.put(nivel, poisFrom(isochrone, cats));
     }
 
-    params.putAll(piramideMaslowGeneralYDetalleParams(poisNivelMaslow, poisCategories, maslowCategories));
+    params.putAll(piramideMaslowGeneralYDetalleParams(poisNivelMaslow,
+        poisCategories, maslowCategories));
+    params.putAll(piramideMaslowDetalleEscuelas(poisCategories, isochrone));
     params.putAll(piramideMaslowDistanciaParams(poisNivelMaslow));
-
     return params;
+  }
+
+  private Map<String, Object> piramideMaslowDetalleEscuelas(List<PoiMaslowCategory> poisCategories,
+      Isochrone isochrone) {
+    int idCategoriaMaslowEscuelas = 15;
+
+    List<PoiMaslowCategory> escuelas = poisCategories.stream()
+        .filter(i -> i.getIdCategoriaMaslow() == idCategoriaMaslowEscuelas).toList();
+
+    List<Poi> pois = poisFrom(isochrone, escuelas);
+
+    List<EscuelasPoisData> poisData = new ArrayList<>();
+
+    int limit = pois.size() < 5 ? pois.size() : 5;
+    for (int j = 0; j < limit; j++) {
+      Poi poi = pois.get(j);
+      if (poi.getAddress() != null) {
+        poisData.add(EscuelasPoisData.builder()
+            .tipo(poi.getPrimaryCategory().get().getName())
+            .nombre(poi.getTitle())
+            .direccion(poi.getAddress().getLabel())
+            .distancia(poi.getDistance().intValue())
+            .build());
+      }
+    }
+
+    return Map.of("MaslowPoisEscuelasCollectionBean", new JRBeanCollectionDataSource(poisData));
   }
 
   private Map<String, Object> piramideMaslowDistanciaParams(Map<NivelMaslow, List<Poi>> poisNivelMaslow) {
@@ -140,16 +169,16 @@ public class IntegralReportService extends BasicReportService {
       List<Poi> pois = poisNivelMaslow.get(nivel);
       if (pois != null) {
         List<CategoriaMaslow> cats = maslowCategories.stream().filter(i -> i.getNivelMaslow() == nivel.getValue())
-            .collect(Collectors.toList());
+            .toList();
 
         maslowPois = new ArrayList<>();
         for (CategoriaMaslow cat : cats) {
           List<String> keys = poisCategories.stream()
               .filter(pc -> pc.getIdCategoriaMaslow() == cat.getId())
-              .map(g -> g.getKey()).collect(Collectors.toList());
+              .map(g -> g.getKey()).toList();
 
           List<Poi> mp = pois.stream().filter(poi -> keys.contains(poi.getPrimaryCategory().get().getId()))
-              .collect(Collectors.toList());
+              .toList();
 
           maslowPois.add(new MaslowCategory(cat.getNombre(), mp));
         }
@@ -159,7 +188,6 @@ public class IntegralReportService extends BasicReportService {
     }
 
     params.putAll(piramideMaslowGeneralParams(poisMaslowCategories));
-
     return params;
   }
 
@@ -276,10 +304,10 @@ public class IntegralReportService extends BasicReportService {
 
     List<Poi> gasolineras = pois.stream()
         .filter(i -> i.primaryCategoryIs(PoiCategory.GASOLINERA().getKey()))
-        .collect(Collectors.toList());
+        .toList();
     List<Poi> estacionamientos = pois.stream()
         .filter(i -> i.primaryCategoryIs(PoiCategory.ESTACIONAMIENTO().getKey()))
-        .collect(Collectors.toList());
+        .toList();
 
     if (gasolineras.size() > 0) {
       gasolineras.sort(Comparator.comparing(Poi::getDistance));

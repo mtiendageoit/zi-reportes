@@ -21,6 +21,7 @@ public class Poi {
 
   private Double distance; // meters
   private Coordinate location;
+  private Address address;
 
   public boolean anyCategoryIs(String category) {
     if (categories != null && !categories.isEmpty()) {
