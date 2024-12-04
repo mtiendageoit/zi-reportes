@@ -44,7 +44,7 @@ public class HereMapsPoisService implements PoisService {
 
       List<Poi> pois = response.getBody().getItems().stream()
           .filter(item -> item.getPrimaryCategory().isPresent() && item.getResultType().equalsIgnoreCase("place"))
-          .toList();
+          .collect(Collectors.toList());
       response.getBody().setItems(pois);
 
       return responseFrom(response.getBody());

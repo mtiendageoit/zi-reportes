@@ -1,6 +1,7 @@
 package com.zonainmueble.reports.isochrone.heremaps;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -62,7 +63,7 @@ public class HereMapsIsolineService implements IsochroneService {
 
     List<Integer> valuesList = input.getTimeValues().stream()
         .map(time -> time.getValue() * SECONDS_IN_MINUTE)
-        .toList();
+        .collect(Collectors.toList());
 
     String values = StringUtils.collectionToCommaDelimitedString(valuesList);
 

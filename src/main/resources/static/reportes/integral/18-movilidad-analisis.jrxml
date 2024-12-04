@@ -16,11 +16,11 @@
 				<text><![CDATA[Análisis de Movilidad, automovil]]></text>
 			</staticText>
 			<rectangle radius="10">
-				<reportElement mode="Opaque" x="28" y="84" width="356" height="500" backcolor="#F8F8F8" uuid="57c225d7-5e96-4284-84c6-13eaa2d743f8">
+				<reportElement mode="Opaque" x="28" y="84" width="356" height="490" backcolor="#F8F8F8" uuid="57c225d7-5e96-4284-84c6-13eaa2d743f8">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="0.0"/>
@@ -91,11 +91,11 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				<textFieldExpression><![CDATA["60 minutos<br/><font face='Montserrat'>" + $P{params}.get( "isoAutomovilAsueto60" ) + " km.</font>"]]></textFieldExpression>
 			</textField>
 			<image scaleImage="FillFrame">
-				<reportElement mode="Opaque" x="43" y="220" width="326" height="350" uuid="84755050-2a1e-45b0-99bd-03aebf71fade">
+				<reportElement mode="Opaque" x="43" y="220" width="326" height="340" uuid="84755050-2a1e-45b0-99bd-03aebf71fade">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<propertyExpression name="net.sf.jasperreports.style.radius" type="simpleText"><![CDATA[10]]></propertyExpression>
 				</reportElement>
 				<box>
@@ -104,7 +104,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				<imageExpression><![CDATA[$P{params}.get( "mapImageMovilidadAnalisisDiaAsueto")]]></imageExpression>
 			</image>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="37" y="214" width="338" height="362" uuid="55219e36-3ce2-4ad2-a598-9855d08d2143">
+				<reportElement mode="Transparent" x="37" y="214" width="338" height="352" uuid="55219e36-3ce2-4ad2-a598-9855d08d2143">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -113,9 +113,9 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="43" y="220" width="326" height="350" uuid="8176597d-3189-4b5c-aa71-183cc65251b9">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<reportElement mode="Transparent" x="43" y="220" width="326" height="340" uuid="8176597d-3189-4b5c-aa71-183cc65251b9">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#F49700"/>
@@ -153,11 +153,11 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 "images/icon-dia-asueto.svg"]]></imageExpression>
 			</image>
 			<rectangle radius="10">
-				<reportElement mode="Opaque" x="408" y="84" width="356" height="500" backcolor="#F8F8F8" uuid="695935f3-9595-45b6-a1ff-4455f86793a6">
+				<reportElement mode="Opaque" x="408" y="84" width="356" height="490" backcolor="#F8F8F8" uuid="695935f3-9595-45b6-a1ff-4455f86793a6">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="0.0"/>
@@ -231,11 +231,11 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				<textFieldExpression><![CDATA["60 minutos<br/><font face='Montserrat'>" + $P{params}.get( "isoAutomovilLaboral60" ) + " km.</font>"]]></textFieldExpression>
 			</textField>
 			<image scaleImage="FillFrame">
-				<reportElement mode="Opaque" x="423" y="220" width="326" height="350" uuid="74afc2ae-161c-448b-a0bf-51c4067c2856">
+				<reportElement mode="Opaque" x="423" y="220" width="326" height="340" uuid="74afc2ae-161c-448b-a0bf-51c4067c2856">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<propertyExpression name="net.sf.jasperreports.style.radius" type="simpleText"><![CDATA[10]]></propertyExpression>
 				</reportElement>
 				<box>
@@ -244,7 +244,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				<imageExpression><![CDATA[$P{params}.get( "mapImageMovilidadAnalisisDiaLaboral")]]></imageExpression>
 			</image>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="417" y="214" width="338" height="362" uuid="d633e952-6c1b-421a-a39d-880d414c16b2">
+				<reportElement mode="Transparent" x="417" y="214" width="338" height="352" uuid="d633e952-6c1b-421a-a39d-880d414c16b2">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -253,9 +253,9 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="423" y="220" width="326" height="350" uuid="4cd1fcdd-46cd-4710-8d38-67720c63d17f">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<reportElement mode="Transparent" x="423" y="220" width="326" height="340" uuid="4cd1fcdd-46cd-4710-8d38-67720c63d17f">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#F49700"/>
@@ -292,6 +292,13 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-dia-laboral.svg" ):
 "images/icon-dia-laboral.svg"]]></imageExpression>
 			</image>
+			<staticText>
+				<reportElement x="408" y="574" width="355" height="13" forecolor="#B8B8B8" uuid="c8e85c4b-16ff-4c5d-b9c2-354136337a64"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Montserrat" size="9" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Nota. Datos historicos.]]></text>
+			</staticText>
 		</band>
 	</detail>
 </jasperReport>

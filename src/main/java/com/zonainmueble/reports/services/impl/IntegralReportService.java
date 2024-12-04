@@ -70,7 +70,7 @@ public class IntegralReportService extends BasicReportService {
     Map<String, Object> params = new HashMap<String, Object>();
     // params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
     // params.putAll(bienestarIngresosParams(input, mun, walkIsos,
-    // preciom2.isPresent()));
+    //     preciom2.isPresent()));
     // params.putAll(movilidadParams(input, walkIsos));
     params.putAll(piramideMaslowParams(walkIsos));
     // params.putAll(conclusionParams(params));
@@ -94,7 +94,7 @@ public class IntegralReportService extends BasicReportService {
     Map<NivelMaslow, List<Poi>> poisNivelMaslow = new HashMap<NivelMaslow, List<Poi>>();
     for (NivelMaslow nivel : NivelMaslow.values()) {
       List<PoiMaslowCategory> cats = poisCategories.stream().filter(i -> i.getNivelMaslow() == nivel.getValue())
-          .toList();
+          .collect(Collectors.toList());
       poisNivelMaslow.put(nivel, poisFrom(isochrone, cats));
     }
 
@@ -110,7 +110,7 @@ public class IntegralReportService extends BasicReportService {
     int idCategoriaMaslowEscuelas = 15;
 
     List<PoiMaslowCategory> escuelas = poisCategories.stream()
-        .filter(i -> i.getIdCategoriaMaslow() == idCategoriaMaslowEscuelas).toList();
+        .filter(i -> i.getIdCategoriaMaslow() == idCategoriaMaslowEscuelas).collect(Collectors.toList());
 
     List<Poi> pois = poisFrom(isochrone, escuelas);
 
@@ -169,16 +169,16 @@ public class IntegralReportService extends BasicReportService {
       List<Poi> pois = poisNivelMaslow.get(nivel);
       if (pois != null) {
         List<CategoriaMaslow> cats = maslowCategories.stream().filter(i -> i.getNivelMaslow() == nivel.getValue())
-            .toList();
+            .collect(Collectors.toList());
 
         maslowPois = new ArrayList<>();
         for (CategoriaMaslow cat : cats) {
           List<String> keys = poisCategories.stream()
               .filter(pc -> pc.getIdCategoriaMaslow() == cat.getId())
-              .map(g -> g.getKey()).toList();
+              .map(g -> g.getKey()).collect(Collectors.toList());
 
           List<Poi> mp = pois.stream().filter(poi -> keys.contains(poi.getPrimaryCategory().get().getId()))
-              .toList();
+              .collect(Collectors.toList());
 
           maslowPois.add(new MaslowCategory(cat.getNombre(), mp));
         }
@@ -196,15 +196,24 @@ public class IntegralReportService extends BasicReportService {
 
     double porcentajeGeneral = 0;
     double porcentajeNivel = 0;
+
     for (NivelMaslow nivel : NivelMaslow.values()) {
       List<MaslowCategory> cats = maslowCategories.get(nivel);
+
+      final double porcentajeUno = 80.0 / cats.size();
+      final double porcentajeDos = 10.0 / cats.size();
+      final double porcentajeTresOMas = 10.0 / cats.size();
 
       porcentajeNivel = 0;
       for (MaslowCategory cat : cats) {
         long count = cat.getCount();
-        long numeroPeso = count >= 3 ? 3 : count;
-        double porcentaje = ((100.0 / cats.size()) / 3) * numeroPeso;
-        porcentajeNivel += porcentaje;
+
+        if (count > 0)
+          porcentajeNivel += porcentajeUno;
+        if (count > 1)
+          porcentajeNivel += porcentajeDos;
+        if (count > 2)
+          porcentajeNivel += porcentajeTresOMas;
       }
       porcentajeGeneral += porcentajeNivel;
       params.put("piramide_maslow_porcentaje_nivel_" + nivel.getValue(),
@@ -239,18 +248,21 @@ public class IntegralReportService extends BasicReportService {
     List<StyledPolygon> asuetoPolys = List.of(
         new StyledPolygon(isochroneFrom(TEN_MINUTES, diaAsuetoIsos).getPolygon(), "#A3DA91FF"),
         new StyledPolygon(isochroneFrom(THIRTY_MINUTES, diaAsuetoIsos).getPolygon(), "#E3E367FF"),
-        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaAsuetoIsos).getPolygon(), "#9BC1DBFF"));
+        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaAsuetoIsos).getPolygon(), "#9BC1DBFF"),
+        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaLaboralIsos).getPolygon(), "#FFFFFF00"));// For same zoom
+
     List<StyledPolygon> laboralPolys = List.of(
         new StyledPolygon(isochroneFrom(TEN_MINUTES, diaLaboralIsos).getPolygon(), "#A3DA91FF"),
         new StyledPolygon(isochroneFrom(THIRTY_MINUTES, diaLaboralIsos).getPolygon(), "#E3E367FF"),
-        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaLaboralIsos).getPolygon(), "#9BC1DBFF"));
+        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaLaboralIsos).getPolygon(), "#9BC1DBFF"),
+        new StyledPolygon(isochroneFrom(SIXTY_MINUTES, diaAsuetoIsos).getPolygon(), "#FFFFFF00"));// For same zoom
 
     byte[] diaAsuetoImg = imageService
-        .image(new MapImageRequest(326, 350, roadmap, marker, asuetoPolys, googleCustomMapId));
+        .image(new MapImageRequest(326, 340, roadmap, marker, asuetoPolys, googleCustomMapId));
     params.put("mapImageMovilidadAnalisisDiaAsueto", diaAsuetoImg);
 
     byte[] diaLaboralImg = imageService
-        .image(new MapImageRequest(326, 350, roadmap, marker, laboralPolys, googleCustomMapId));
+        .image(new MapImageRequest(326, 340, roadmap, marker, laboralPolys, googleCustomMapId));
     params.put("mapImageMovilidadAnalisisDiaLaboral", diaLaboralImg);
 
     params.putAll(addKmDistanceParams(diaAsuetoIsos, diaLaboralIsos));
@@ -304,10 +316,10 @@ public class IntegralReportService extends BasicReportService {
 
     List<Poi> gasolineras = pois.stream()
         .filter(i -> i.primaryCategoryIs(PoiCategory.GASOLINERA().getKey()))
-        .toList();
+        .collect(Collectors.toList());
     List<Poi> estacionamientos = pois.stream()
         .filter(i -> i.primaryCategoryIs(PoiCategory.ESTACIONAMIENTO().getKey()))
-        .toList();
+        .collect(Collectors.toList());
 
     if (gasolineras.size() > 0) {
       gasolineras.sort(Comparator.comparing(Poi::getDistance));
