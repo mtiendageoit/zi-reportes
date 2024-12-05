@@ -57,7 +57,7 @@
 				<textFieldExpression><![CDATA["NIVEL 3. <font face='Montserrat SemiBold'>ESPACIOS DE CONEXIÓN</font>"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="28" y="67" width="360" height="340" uuid="22c7dbed-a67d-42c3-8f81-09ac83b7ae59">
+				<reportElement x="28" y="67" width="360" height="83" uuid="22c7dbed-a67d-42c3-8f81-09ac83b7ae59">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -163,7 +163,7 @@
 				</jr:table>
 			</componentElement>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="23" y="23" width="370" height="389" uuid="ca8ffc50-9977-4bea-a046-75d976724cc3">
+				<reportElement mode="Transparent" x="23" y="23" width="370" height="317" uuid="ca8ffc50-9977-4bea-a046-75d976724cc3">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -171,7 +171,7 @@
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="28" y="28" width="360" height="379" uuid="f347453f-0e47-4db5-9027-b9b354932485">
+				<reportElement mode="Transparent" x="28" y="28" width="360" height="307" uuid="f347453f-0e47-4db5-9027-b9b354932485">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -180,11 +180,11 @@
 				</graphicElement>
 			</rectangle>
 			<image scaleImage="FillFrame">
-				<reportElement x="28" y="418" width="360" height="164" uuid="4d09c610-3b9a-4a45-9c23-1706f403f193">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<reportElement x="28" y="366" width="360" height="217" uuid="4d09c610-3b9a-4a45-9c23-1706f403f193">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
 $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/publicidad-zi-muro.png" ):
@@ -207,7 +207,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				<textFieldExpression><![CDATA["NIVEL 4. <font face='Montserrat SemiBold'>ESTILO Y PRESTIGIO</font>"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="402" y="67" width="360" height="147" uuid="798bfbc0-402e-488e-b679-2811763a83bd">
+				<reportElement x="402" y="67" width="360" height="83" uuid="798bfbc0-402e-488e-b679-2811763a83bd">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -313,7 +313,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</jr:table>
 			</componentElement>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="397" y="23" width="370" height="197" uuid="b87f6f1a-242f-4821-91fe-38ab56ccf04f">
+				<reportElement mode="Transparent" x="397" y="23" width="370" height="173" uuid="b87f6f1a-242f-4821-91fe-38ab56ccf04f">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -321,15 +321,16 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="402" y="28" width="360" height="187" uuid="0820b7fe-35df-4ab6-b8a6-a3c3cb674e19">
+				<reportElement mode="Transparent" x="402" y="28" width="360" height="163" uuid="0820b7fe-35df-4ab6-b8a6-a3c3cb674e19">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="1.0" lineColor="#050505"/>
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="0">
-				<reportElement mode="Opaque" x="402" y="257" width="360" height="40" backcolor="#A34673" uuid="0d82305d-5dcc-477e-a369-0ad42c2d0d41">
+				<reportElement mode="Opaque" x="406" y="222" width="360" height="40" backcolor="#A34673" uuid="0d82305d-5dcc-477e-a369-0ad42c2d0d41">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -338,14 +339,14 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</graphicElement>
 			</rectangle>
 			<textField textAdjust="ScaleFont">
-				<reportElement x="402" y="269" width="360" height="18" forecolor="#FFFFFF" uuid="44bf1280-32ca-4e02-8850-840adfd1f5ea"/>
+				<reportElement x="406" y="234" width="360" height="18" forecolor="#FFFFFF" uuid="44bf1280-32ca-4e02-8850-840adfd1f5ea"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
 					<font fontName="Montserrat Medium" size="12"/>
 				</textElement>
 				<textFieldExpression><![CDATA["NIVEL 5. <font face='Montserrat SemiBold'>HORIZONTES PLENOS</font>"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="402" y="296" width="360" height="171" uuid="b192d751-b421-4e2f-85e1-627d17d39ce0">
+				<reportElement x="406" y="261" width="360" height="74" uuid="b192d751-b421-4e2f-85e1-627d17d39ce0">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -451,7 +452,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</jr:table>
 			</componentElement>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="397" y="252" width="370" height="221" uuid="96317489-c741-4c3e-882e-5bffc48b7986">
+				<reportElement mode="Transparent" x="401" y="217" width="370" height="149" uuid="96317489-c741-4c3e-882e-5bffc48b7986">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -459,7 +460,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="402" y="257" width="360" height="211" uuid="53288842-f5b2-49d1-bd68-862216a4b17f">
+				<reportElement mode="Transparent" x="406" y="222" width="360" height="139" uuid="53288842-f5b2-49d1-bd68-862216a4b17f">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -468,18 +469,18 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/p
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement x="405" y="510" width="372" height="72" backcolor="#F8F8F8" uuid="aa0e1f83-1ec1-4305-8444-d0b84e09aa2e">
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<reportElement x="402" y="392" width="360" height="68" backcolor="#F8F8F8" uuid="aa0e1f83-1ec1-4305-8444-d0b84e09aa2e">
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
 					<pen lineWidth="0.0"/>
 				</graphicElement>
 			</rectangle>
 			<image>
-				<reportElement x="446" y="520" width="52" height="52" uuid="ced9f926-23e0-4bd3-b97c-f218d7fe73db">
+				<reportElement x="431" y="400" width="52" height="52" uuid="ced9f926-23e0-4bd3-b97c-f218d7fe73db">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
@@ -490,7 +491,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/i
 "images/icon-caminando.svg"]]></imageExpression>
 			</image>
 			<textField textAdjust="ScaleFont" isBlankWhenNull="true">
-				<reportElement x="509" y="538" width="241" height="16" forecolor="#3C3C3B" uuid="162a2734-eccd-4845-b1a9-39f9d850c338">
+				<reportElement x="494" y="418" width="241" height="16" forecolor="#3C3C3B" uuid="162a2734-eccd-4845-b1a9-39f9d850c338">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>

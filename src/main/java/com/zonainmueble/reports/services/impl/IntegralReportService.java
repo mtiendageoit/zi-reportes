@@ -70,9 +70,9 @@ public class IntegralReportService extends BasicReportService {
     Map<String, Object> params = new HashMap<String, Object>();
     // params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
     // params.putAll(bienestarIngresosParams(input, mun, walkIsos,
-    //     preciom2.isPresent()));
-    // params.putAll(movilidadParams(input, walkIsos));
-    params.putAll(piramideMaslowParams(walkIsos));
+    // preciom2.isPresent()));
+    params.putAll(movilidadParams(input, walkIsos));
+    // params.putAll(piramideMaslowParams(walkIsos));
     // params.putAll(conclusionParams(params));
     return params;
   }
@@ -100,23 +100,30 @@ public class IntegralReportService extends BasicReportService {
 
     params.putAll(piramideMaslowGeneralYDetalleParams(poisNivelMaslow,
         poisCategories, maslowCategories));
-    params.putAll(piramideMaslowDetalleEscuelas(poisCategories, isochrone));
-    params.putAll(piramideMaslowDistanciaParams(poisNivelMaslow));
+
+    List<Poi> escuelasPois = escuelasPois(poisCategories, isochrone);
+    params.putAll(piramideMaslowDetalleEscuelas(escuelasPois));
+    params.putAll(piramideMaslowDistanciaParams(poisNivelMaslow, escuelasPois, maslowCategories, poisCategories));
     return params;
   }
 
-  private Map<String, Object> piramideMaslowDetalleEscuelas(List<PoiMaslowCategory> poisCategories,
+  private List<Poi> escuelasPois(List<PoiMaslowCategory> poisCategories,
       Isochrone isochrone) {
-    int idCategoriaMaslowEscuelas = 15;
+
+    List<Integer> idsEscuelas = List.of(PoiMaslowCategory.ID_CATEGORIA_MASLOW_ESCUELAS);
 
     List<PoiMaslowCategory> escuelas = poisCategories.stream()
-        .filter(i -> i.getIdCategoriaMaslow() == idCategoriaMaslowEscuelas).collect(Collectors.toList());
+        .filter(i -> idsEscuelas.contains(i.getIdCategoriaMaslow())).collect(Collectors.toList());
 
     List<Poi> pois = poisFrom(isochrone, escuelas);
+    return pois;
+  }
 
+  private Map<String, Object> piramideMaslowDetalleEscuelas(List<Poi> pois) {
     List<EscuelasPoisData> poisData = new ArrayList<>();
 
-    int limit = pois.size() < 5 ? pois.size() : 5;
+    int limit = pois.size() < 6 ? pois.size() : 6;
+    // int limit = pois.size();
     for (int j = 0; j < limit; j++) {
       Poi poi = pois.get(j);
       if (poi.getAddress() != null) {
@@ -129,30 +136,65 @@ public class IntegralReportService extends BasicReportService {
       }
     }
 
-    return Map.of("MaslowPoisEscuelasCollectionBean", new JRBeanCollectionDataSource(poisData));
+    String existenEscuelas = "NO";
+    if (poisData.size() > 0) {
+      existenEscuelas = "SI";
+    }
+
+    return Map.of("MaslowPoisEscuelasCollectionBean", new JRBeanCollectionDataSource(poisData),
+        "MaslowPoisExistenEscuelas", existenEscuelas);
   }
 
-  private Map<String, Object> piramideMaslowDistanciaParams(Map<NivelMaslow, List<Poi>> poisNivelMaslow) {
+  private Map<String, Object> piramideMaslowDistanciaParams(Map<NivelMaslow, List<Poi>> poisNivelMaslow,
+      List<Poi> escuelasPois, List<CategoriaMaslow> maslowCats, List<PoiMaslowCategory> poisCats) {
     Map<String, Object> params = new HashMap<String, Object>();
 
     double velocidadCaminandoKMH = 3;
 
     for (NivelMaslow nivel : NivelMaslow.values()) {
+      List<CategoriaMaslow> cats = maslowCats.stream()
+          .filter(i -> i.getNivelMaslow() == nivel.getValue()).toList();
+
       List<Poi> pois = poisNivelMaslow.get(nivel);
       pois.sort(Comparator.comparing(Poi::getDistance));
-      String prop = "POIS_MASLOW_NIVEL_" + nivel.getValue();
 
-      for (int i = 0; i < pois.size(); i++) {
-        params.put(prop + "_NOMBRE_" + i, StringUtils.alfanumeric(pois.get(i).getTitle()));
-        double minutos = ((pois.get(i).getDistance() * 60) / (velocidadCaminandoKMH * 1000));
-        if (minutos > 15) {
-          minutos = 15;
-        } else if (minutos < 1) {
-          minutos = 1;
+      int index = 0;
+      boolean hasItemInAnyCat;
+      do {
+        hasItemInAnyCat = false;
+        for (CategoriaMaslow cat : cats) {
+          if (pois.size() == 0 || index == 10) {
+            break;
+          }
+          List<String> idsPois = poisCats.stream().filter(i -> i.getIdCategoriaMaslow() == cat.getId())
+              .map(i -> i.getKey()).toList();
+
+          Optional<Poi> poi = pois.stream().filter(i -> idsPois.contains(i.getPrimaryCategory().get().getId()))
+              .findFirst();
+
+          if (poi.isPresent()) {
+            String prop = "POIS_MASLOW_NIVEL_" + nivel.getValue();
+            params.put(prop + "_NOMBRE_" + index, StringUtils.alfanumeric(poi.get().getTitle()));
+
+            double minutos = ((poi.get().getDistance() * 60) / (velocidadCaminandoKMH * 1000));
+            if (minutos > 15) {
+              minutos = 15;
+            } else if (minutos < 1) {
+              minutos = 1;
+            }
+            params.put(prop + "_MINUTOS_" + index, NumberUtils.formatToInt(minutos));
+            params.put(prop + "_METROS_" + index, NumberUtils.formatToInt(poi.get().getDistance()));
+
+            pois.remove(poi.get());
+            index++;
+            hasItemInAnyCat = true;
+          }
         }
-        params.put(prop + "_MINUTOS_" + i, NumberUtils.formatToInt(minutos));
-        params.put(prop + "_METROS_" + i, NumberUtils.formatToInt(pois.get(i).getDistance()));
-      }
+
+        if (index == 10) {
+          break;
+        }
+      } while (hasItemInAnyCat);
     }
 
     return params;
@@ -261,9 +303,17 @@ public class IntegralReportService extends BasicReportService {
         .image(new MapImageRequest(326, 340, roadmap, marker, asuetoPolys, googleCustomMapId));
     params.put("mapImageMovilidadAnalisisDiaAsueto", diaAsuetoImg);
 
+    byte[] diaAsuetoImgFull = imageService
+        .image(new MapImageRequest(736, 555, roadmap, marker, asuetoPolys, googleCustomMapId));
+    params.put("mapImageMovilidadAnalisisDiaAsuetoFull", diaAsuetoImgFull);
+
     byte[] diaLaboralImg = imageService
         .image(new MapImageRequest(326, 340, roadmap, marker, laboralPolys, googleCustomMapId));
     params.put("mapImageMovilidadAnalisisDiaLaboral", diaLaboralImg);
+
+    byte[] diaLaboralImgFull = imageService
+        .image(new MapImageRequest(736, 555, roadmap, marker, laboralPolys, googleCustomMapId));
+    params.put("mapImageMovilidadAnalisisDiaLaboralFull", diaLaboralImgFull);
 
     params.putAll(addKmDistanceParams(diaAsuetoIsos, diaLaboralIsos));
 

@@ -62,7 +62,7 @@
 				<textFieldExpression><![CDATA["NIVEL 1. <font face='Montserrat SemiBold'>NECESIDADES BÁSICAS</font>"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="28" y="67" width="360" height="195" uuid="7992a7d6-9815-498e-8332-3a090ad60c94">
+				<reportElement x="28" y="67" width="360" height="83" uuid="7992a7d6-9815-498e-8332-3a090ad60c94">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -168,7 +168,7 @@
 				</jr:table>
 			</componentElement>
 			<rectangle radius="15">
-				<reportElement mode="Transparent" x="23" y="23" width="370" height="268" uuid="6a4cd62b-0b18-471a-ab16-8a32a57a76ed">
+				<reportElement mode="Transparent" x="23" y="23" width="370" height="221" uuid="6a4cd62b-0b18-471a-ab16-8a32a57a76ed">
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
 				<graphicElement>
@@ -176,7 +176,7 @@
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="10">
-				<reportElement mode="Transparent" x="28" y="28" width="360" height="258" uuid="61ba4ab9-2a5c-486b-9f90-acde2b5c8979">
+				<reportElement mode="Transparent" x="28" y="28" width="360" height="211" uuid="61ba4ab9-2a5c-486b-9f90-acde2b5c8979">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 				</reportElement>
@@ -201,7 +201,7 @@
 				<textFieldExpression><![CDATA["NIVEL 2. <font face='Montserrat SemiBold'>SEGURIDAD Y ESTABILIDAD</font>"]]></textFieldExpression>
 			</textField>
 			<componentElement>
-				<reportElement x="402" y="67" width="360" height="219" uuid="8ed1a8ac-c775-4b94-a6b3-d225e51c4e5c">
+				<reportElement x="402" y="67" width="360" height="83" uuid="8ed1a8ac-c775-4b94-a6b3-d225e51c4e5c">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -325,7 +325,7 @@
 				</graphicElement>
 			</rectangle>
 			<rectangle radius="0">
-				<reportElement mode="Opaque" x="28" y="320" width="734" height="40" backcolor="#DC1D59" uuid="fc93f40f-26a9-4923-8311-474229e4c00d">
+				<reportElement mode="Opaque" x="28" y="306" width="734" height="40" backcolor="#DC1D59" uuid="fc93f40f-26a9-4923-8311-474229e4c00d">
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
@@ -334,7 +334,7 @@
 				</graphicElement>
 			</rectangle>
 			<textField textAdjust="ScaleFont">
-				<reportElement x="28" y="332" width="734" height="18" forecolor="#FFFFFF" uuid="d1727f99-7ec2-4709-9ab6-b47240b72622">
+				<reportElement x="28" y="318" width="734" height="18" forecolor="#FFFFFF" uuid="d1727f99-7ec2-4709-9ab6-b47240b72622">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
 				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
@@ -342,8 +342,26 @@
 				</textElement>
 				<textFieldExpression><![CDATA["NIVEL 2. <font face='Montserrat SemiBold'>DETALLE DE ESCUELAS</font>"]]></textFieldExpression>
 			</textField>
+			<rectangle radius="15">
+				<reportElement mode="Transparent" x="22" y="301" width="745" height="288" uuid="0c9fdda3-a642-4f12-a6e1-159300472c5c">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="10.0" lineColor="#FFFFFF"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement mode="Transparent" x="28" y="306" width="734" height="54" uuid="0854048f-f57b-4252-bab4-0663eb243a58">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="1.0" lineColor="#050505"/>
+				</graphicElement>
+			</rectangle>
 			<componentElement>
-				<reportElement x="28" y="358" width="734" height="195" uuid="c8d21206-9ab3-4a12-84c9-891f2234f95f">
+				<reportElement x="28" y="344" width="734" height="85" uuid="c8d21206-9ab3-4a12-84c9-891f2234f95f">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header"/>
 					<property name="com.jaspersoft.studio.table.style.column_header"/>
@@ -352,8 +370,8 @@
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 				</reportElement>
-				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
-					<datasetRun subDataset="poisEscuelasDataset" uuid="0c6c0542-4245-45ae-a865-972ad3f28393">
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" whenNoDataType="AllSectionsNoDetail">
+					<datasetRun subDataset="poisEscuelasDataset" uuid="bd581590-005b-41ad-800f-3309d3c8685a">
 						<dataSourceExpression><![CDATA[$P{params}.get( "MaslowPoisEscuelasCollectionBean" )]]></dataSourceExpression>
 					</datasetRun>
 					<jr:column width="92" uuid="add7e649-90c0-4ca6-96ef-89b6f0318874">
@@ -384,6 +402,9 @@
 						<jr:detailCell style="maslowTableN2" height="24">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<property name="com.jaspersoft.studio.unit.height" value="px"/>
+							<box>
+								<leftPen lineWidth="1.0"/>
+							</box>
 							<textField textAdjust="ScaleFont">
 								<reportElement stretchType="ContainerHeight" x="0" y="0" width="92" height="24" forecolor="#3C3C3B" uuid="764b960d-35f4-452b-9f57-8d78aabc94ce">
 									<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
@@ -435,7 +456,7 @@
 							<box>
 								<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 								<leftPen lineStyle="Solid" lineColor="#000000"/>
-								<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+								<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
 								<rightPen lineStyle="Solid" lineColor="#000000"/>
 							</box>
 							<textField textAdjust="StretchHeight">
@@ -480,6 +501,9 @@
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="maslowTableN2" height="24">
+							<box>
+								<bottomPen lineWidth="1.0"/>
+							</box>
 							<textField textAdjust="StretchHeight">
 								<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="0" width="352" height="24" forecolor="#3C3C3B" uuid="eb8f171f-3eca-4ee4-8b80-85f82d2c41f6">
 									<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
@@ -502,12 +526,12 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
-					<jr:column width="78" uuid="a450229c-b001-491b-9010-955c4709d5ef">
+					<jr:column width="77" uuid="a450229c-b001-491b-9010-955c4709d5ef">
 						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column4"/>
 						<jr:columnHeader height="28" rowSpan="1">
 							<property name="com.jaspersoft.studio.unit.width" value="px"/>
 							<staticText>
-								<reportElement mode="Opaque" x="0" y="0" width="78" height="28" forecolor="#3C3C3B" backcolor="#FCE9EF" uuid="5b3bc306-9df0-4d98-b933-511fa8426fe7"/>
+								<reportElement mode="Opaque" x="0" y="0" width="77" height="28" forecolor="#3C3C3B" backcolor="#FCE9EF" uuid="5b3bc306-9df0-4d98-b933-511fa8426fe7"/>
 								<box>
 									<pen lineWidth="1.0"/>
 									<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
@@ -522,8 +546,12 @@
 							</staticText>
 						</jr:columnHeader>
 						<jr:detailCell style="maslowTableN2" height="24">
+							<box>
+								<bottomPen lineWidth="1.0"/>
+								<rightPen lineWidth="1.0"/>
+							</box>
 							<textField textAdjust="StretchHeight">
-								<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="0" width="78" height="24" forecolor="#3C3C3B" uuid="e6b44220-97a5-45c2-a175-c0af8b856ff8">
+								<reportElement positionType="Float" stretchType="ContainerHeight" x="0" y="0" width="77" height="24" forecolor="#3C3C3B" uuid="e6b44220-97a5-45c2-a175-c0af8b856ff8">
 									<property name="com.jaspersoft.studio.unit.spacingAfter" value="px"/>
 									<property name="com.jaspersoft.studio.unit.spacingBefore" value="px"/>
 									<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
@@ -544,26 +572,9 @@
 							</textField>
 						</jr:detailCell>
 					</jr:column>
+					<jr:tableHeader splitType="Prevent"/>
 				</jr:table>
 			</componentElement>
-			<rectangle radius="15">
-				<reportElement mode="Transparent" x="22" y="315" width="745" height="268" uuid="0c9fdda3-a642-4f12-a6e1-159300472c5c">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<graphicElement>
-					<pen lineWidth="10.0" lineColor="#FFFFFF"/>
-				</graphicElement>
-			</rectangle>
-			<rectangle radius="10">
-				<reportElement mode="Transparent" x="28" y="320" width="734" height="258" uuid="0854048f-f57b-4252-bab4-0663eb243a58">
-					<property name="com.jaspersoft.studio.unit.height" value="px"/>
-					<property name="com.jaspersoft.studio.unit.width" value="px"/>
-				</reportElement>
-				<graphicElement>
-					<pen lineWidth="1.0" lineColor="#050505"/>
-				</graphicElement>
-			</rectangle>
 		</band>
 	</detail>
 </jasperReport>
