@@ -9,7 +9,7 @@
 	<detail>
 		<band height="612" splitType="Stretch">
 			<staticText>
-				<reportElement x="26" y="22" width="736" height="40" forecolor="#3C3C3B" uuid="15c64adf-613a-498c-9079-1dada241c9f9"/>
+				<reportElement x="26" y="22" width="736" height="40" forecolor="#3C3C3B" uuid="ad35c2a0-8366-4596-a02c-9c065d7e8883"/>
 				<textElement textAlignment="Center" verticalAlignment="Bottom">
 					<font fontName="Montserrat" size="30"/>
 				</textElement>

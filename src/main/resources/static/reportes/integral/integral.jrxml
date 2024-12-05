@@ -204,6 +204,7 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/11-piram
 			</p:subreportPart>
 		</part>
 		<part uuid="396370c2-dfa3-4841-ac52-cef362d0900c">
+			<printWhenExpression><![CDATA[$P{params}.get( "MaslowPoisExistenEscuelas" ).toString().equals("SI")]]></printWhenExpression>
 			<p:subreportPart xmlns:p="http://jasperreports.sourceforge.net/jasperreports/parts" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/parts http://jasperreports.sourceforge.net/xsd/parts.xsd">
 				<subreportParameter name="REPORT_DATA_SOURCE">
 					<subreportParameterExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></subreportParameterExpression>
@@ -217,6 +218,23 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/11-piram
 				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
 $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/12-piramide-detalle-1.jasper" ):
 "12-piramide-detalle-1.jasper"]]></subreportExpression>
+			</p:subreportPart>
+		</part>
+		<part uuid="8723bc09-aee5-4a26-9e7b-ba9a0790502c">
+			<printWhenExpression><![CDATA[$P{params}.get( "MaslowPoisExistenEscuelas" ).toString().equals("NO")]]></printWhenExpression>
+			<p:subreportPart xmlns:p="http://jasperreports.sourceforge.net/jasperreports/parts" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/parts http://jasperreports.sourceforge.net/xsd/parts.xsd">
+				<subreportParameter name="REPORT_DATA_SOURCE">
+					<subreportParameterExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="params">
+					<subreportParameterExpression><![CDATA[$P{params}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_CLASS_LOADER">
+					<subreportParameterExpression><![CDATA[$P{REPORT_CLASS_LOADER}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/12-piramide-detalle-1-1.jasper" ):
+"12-piramide-detalle-1-1.jasper"]]></subreportExpression>
 			</p:subreportPart>
 		</part>
 		<part uuid="fe9a83a3-d98f-49ce-82ec-3397e9127e77">
@@ -315,6 +333,39 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/18-movil
 "18-movilidad-analisis.jasper"]]></subreportExpression>
 			</p:subreportPart>
 		</part>
+		<part uuid="9be39a0e-46a2-4ad8-81ce-ac2bd539c55a">
+			<p:subreportPart xmlns:p="http://jasperreports.sourceforge.net/jasperreports/parts" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/parts http://jasperreports.sourceforge.net/xsd/parts.xsd">
+				<subreportParameter name="params">
+					<subreportParameterExpression><![CDATA[$P{params}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_CLASS_LOADER">
+					<subreportParameterExpression><![CDATA[$P{REPORT_CLASS_LOADER}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_DATA_SOURCE">
+					<subreportParameterExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/19-movilidad-analisis-asueto.jasper" ):
+"19-movilidad-analisis-asueto.jasper"]]></subreportExpression>
+			</p:subreportPart>
+		</part>
+		<part uuid="5d1c976c-c757-4250-885e-5f89bb0b5259">
+			<p:subreportPart xmlns:p="http://jasperreports.sourceforge.net/jasperreports/parts" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/parts http://jasperreports.sourceforge.net/xsd/parts.xsd">
+				<subreportParameter name="REPORT_DATA_SOURCE">
+					<subreportParameterExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="params">
+					<subreportParameterExpression><![CDATA[$P{params}
+]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportParameter name="REPORT_CLASS_LOADER">
+					<subreportParameterExpression><![CDATA[$P{REPORT_CLASS_LOADER}]]></subreportParameterExpression>
+				</subreportParameter>
+				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/20-movilidad-analisis-laboral.jasper" ):
+"20-movilidad-analisis-laboral.jasper"]]></subreportExpression>
+			</p:subreportPart>
+		</part>
 		<part uuid="54d40a97-7d9d-4bf0-88be-dfe9d342830f">
 			<p:subreportPart xmlns:p="http://jasperreports.sourceforge.net/jasperreports/parts" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/parts http://jasperreports.sourceforge.net/xsd/parts.xsd">
 				<subreportParameter name="REPORT_DATA_SOURCE">
@@ -327,8 +378,8 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/18-movil
 					<subreportParameterExpression><![CDATA[$P{REPORT_CLASS_LOADER}]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
-$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/19-conclusion.jasper" ):
-"19-conclusion.jasper"]]></subreportExpression>
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/21-conclusion.jasper" ):
+"21-conclusion.jasper"]]></subreportExpression>
 			</p:subreportPart>
 		</part>
 		<part uuid="eeb8ebb4-abed-41fe-9397-49a5322617a6">
@@ -343,8 +394,8 @@ $P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/19-concl
 					<subreportParameterExpression><![CDATA[new net.sf.jasperreports.engine.JREmptyDataSource()]]></subreportParameterExpression>
 				</subreportParameter>
 				<subreportExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
-$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/20-gracias.jasper" ):
-"20-gracias.jasper"]]></subreportExpression>
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/22-gracias.jasper" ):
+"22-gracias.jasper"]]></subreportExpression>
 			</p:subreportPart>
 		</part>
 	</detail>
