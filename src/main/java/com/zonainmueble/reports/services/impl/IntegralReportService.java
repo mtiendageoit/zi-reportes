@@ -68,12 +68,12 @@ public class IntegralReportService extends BasicReportService {
         .precioMetroCuadrado(mun.getClaveEdo(), mun.getClaveMun());
 
     Map<String, Object> params = new HashMap<String, Object>();
-    // params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
-    // params.putAll(bienestarIngresosParams(input, mun, walkIsos,
-    // preciom2.isPresent()));
+    params.putAll(basicReportParams(input, mun, walkIsos, preciom2));
+    params.putAll(bienestarIngresosParams(input, mun, walkIsos,
+        preciom2.isPresent()));
     params.putAll(movilidadParams(input, walkIsos));
-    // params.putAll(piramideMaslowParams(walkIsos));
-    // params.putAll(conclusionParams(params));
+    params.putAll(piramideMaslowParams(walkIsos));
+    params.putAll(conclusionParams(params));
     return params;
   }
 

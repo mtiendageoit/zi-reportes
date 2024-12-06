@@ -59,16 +59,81 @@
 				</textElement>
 				<text><![CDATA[Día laboral (8:00 a.m.)]]></text>
 			</staticText>
+			<rectangle radius="15">
+				<reportElement mode="Opaque" x="59" y="533" width="365" height="40" backcolor="rgba(244, 151, 0, 0.78431374)" uuid="63981a5e-bd54-4b75-affc-67744b1054b4">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="0.0"/>
+				</graphicElement>
+			</rectangle>
 			<image>
-				<reportElement x="37" y="34" width="32" height="32" uuid="bd91a75a-666f-414d-ad7d-40b4e3609bcd">
+				<reportElement x="35" y="527" width="52" height="52" uuid="a6d72c06-87e9-44c5-8838-e0c101ddb56e">
 					<property name="com.jaspersoft.studio.unit.width" value="px"/>
 					<property name="com.jaspersoft.studio.unit.height" value="px"/>
 					<property name="com.jaspersoft.studio.unit.y" value="px"/>
 					<property name="com.jaspersoft.studio.unit.x" value="px"/>
 				</reportElement>
 				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
-$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-dia-asueto.svg" ):
-"images/icon-dia-asueto.svg"]]></imageExpression>
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-automovil.svg" ):
+"images/icon-automovil.svg"]]></imageExpression>
+			</image>
+			<ellipse>
+				<reportElement mode="Opaque" x="96" y="541" width="12" height="12" forecolor="#FFFFFF" backcolor="#A3DA91" uuid="96068dc0-f597-4e54-b50f-56adbce4cb4c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="115" y="536" width="84" height="34" forecolor="#FFFFFF" uuid="e64e9420-e5a4-4e73-b6b4-b960297dad4f"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["10 minutos<br/><font face='Montserrat'>" + $P{params}.get( "isoAutomovilLaboral10" ) + " km.</font>"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement mode="Opaque" x="206" y="541" width="12" height="12" forecolor="#FFFFFF" backcolor="#E3E367" uuid="3def4340-61a2-4cb3-8156-9acc70392b23">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="225" y="536" width="84" height="34" forecolor="#FFFFFF" uuid="21173b96-edd9-4ceb-a9de-d1d9db9afbdd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["30 minutos<br/><font face='Montserrat'>" + $P{params}.get( "isoAutomovilLaboral30" ) + " km.</font>"]]></textFieldExpression>
+			</textField>
+			<ellipse>
+				<reportElement mode="Opaque" x="316" y="541" width="12" height="12" forecolor="#FFFFFF" backcolor="#9BC1DB" uuid="ba64160e-ebd8-4192-ab22-03907edbf2ec">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</ellipse>
+			<textField textAdjust="ScaleFont">
+				<reportElement x="335" y="536" width="80" height="34" forecolor="#FFFFFF" uuid="57b424f1-529e-4625-bf86-47ba80af6e17">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle" markup="styled">
+					<font fontName="Montserrat Medium" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["60 minutos<br/><font face='Montserrat'>" + $P{params}.get( "isoAutomovilLaboral60" ) + " km.</font>"]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="35" y="36" width="32" height="32" uuid="3faaee51-1339-4dc7-a6b1-a7dcc20f4e85">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+					<property name="com.jaspersoft.studio.unit.x" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{REPORT_CLASS_LOADER} != null ? 
+$P{REPORT_CLASS_LOADER}.getResourceAsStream( "/static/reportes/integral/images/icon-dia-laboral.svg" ):
+"images/icon-dia-laboral.svg"]]></imageExpression>
 			</image>
 		</band>
 	</detail>
