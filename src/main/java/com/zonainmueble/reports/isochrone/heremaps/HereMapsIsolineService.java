@@ -78,7 +78,7 @@ public class HereMapsIsolineService implements IsochroneService {
 
     urlBuilder.append("&range[type]=time");
     urlBuilder.append("&range[values]=").append(values);
-    urlBuilder.append("&shape[maxPoints]=350");
+    urlBuilder.append("&shape[maxPoints]=150");
     urlBuilder.append("&optimizeFor=performance");
     urlBuilder.append("&apiKey=").append(key);
 
