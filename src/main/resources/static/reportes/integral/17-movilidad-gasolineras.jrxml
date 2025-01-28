@@ -21,7 +21,7 @@
 				<textElement verticalAlignment="Top">
 					<font fontName="Montserrat Medium" size="30"/>
 				</textElement>
-				<text><![CDATA[Gasolineras cercanas y confiables]]></text>
+				<text><![CDATA[Gasolineras cercanas]]></text>
 			</staticText>
 			<line>
 				<reportElement x="28" y="112" width="736" height="1" forecolor="#3C3C3B" uuid="e6237ea3-f338-4d42-a5c0-78e6511b927d">
